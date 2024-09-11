@@ -1036,3 +1036,45 @@ a:focus {
   color: inherit;
 }
 /*# sourceMappingURL=style.css.map */
+
+
+
+
+.vakken-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 20px;
+}
+
+.vak {
+  padding: 20px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  background-color: #f9f9f9;
+}
+
+.vak h3 {
+  margin-top: 0;
+}
+
+.vak p {
+  margin-bottom: 0;
+}
+
+.heading_container {
+  margin-bottom: 20px;
+}
+
+.detail-box a {
+  display: inline-block;
+  margin-top: 20px;
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: white;
+  border-radius: 4px;
+  text-decoration: none;
+}
+
+.detail-box a:hover {
+  background-color: #0056b3;
+}

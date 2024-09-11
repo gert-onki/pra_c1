@@ -30,6 +30,50 @@
   <!-- responsive style -->
   <link href="css/responsive.css" rel="stylesheet" />
 
+
+
+  <style>
+    .vakken-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 20px;
+    }
+
+    .vak {
+      padding: 20px;
+      border: 1px solid #ddd;
+      border-radius: 8px;
+      background-color: #f9f9f9;
+    }
+
+    .vak h3 {
+      margin-top: 0;
+    }
+
+    .vak p {
+      margin-bottom: 0;
+    }
+
+    .heading_container {
+      margin-bottom: 20px;
+    }
+
+    .detail-box a {
+      display: inline-block;
+      margin-top: 20px;
+      padding: 10px 20px;
+      background-color: #007bff;
+      color: white;
+      border-radius: 4px;
+      text-decoration: none;
+    }
+
+    .detail-box a:hover {
+      background-color: #0056b3;
+    }
+  </style>
+
+
 </head>
 
 <body>
@@ -92,39 +136,38 @@
   <!-- about section -->
 
   <section class="about_section layout_padding-bottom">
-    <div class="container  ">
+    <div class="container">
       <div class="row">
-        <div class="col-md-6">
+        <div class="col-md-12">
           <div class="detail-box">
             <div class="heading_container">
-              <h2>
-                Onze vakken.
-              </h2>
+              <h2>Onze vakken</h2>
             </div>
-            <p>
-              Op onze school worden er een hoop gevarieerde vakken gegeven het eerste krijg je deze vakken: <br />
-              Web: <br />
-              ga je leren website's maken. net zoals deze. <br />
-              native: <br />
-              Met dit vak ga je leren om te gaan met python en c# terwijl je back-end applicaties probeerd te maken <br />
-              pra: <br />
-              Pra staat voor praktijk en hier ga in teams aan grote projecten werken. Ik vind dit persoonlijk wel een van de leukste vakken. <br />
-              pro: <br />
-              Bij pro krijg je voornamelijk uitleg. <br />
-              Engels, Nederlands & Rekenen: <br />
-              IK denk dat deze vakken vrijwel voor zich zelf spreken.   
-            </p>
-            <a href="https://www.curio.nl">
-              Read More
-            </a>
+            <div class="vakken-grid">
+              <div class="vak">
+                <h3>Web</h3>
+                <p>Leren websites bouwen zoals deze.</p>
+              </div>
+              <div class="vak">
+                <h3>Native</h3>
+                <p>Ontwikkel back-end applicaties met Python en C#.</p>
+              </div>
+              <div class="vak">
+                <h3>PRA (Praktijk)</h3>
+                <p>Werk samen in teams aan grote projecten.</p>
+              </div>
+              <div class="vak">
+                <h3>PRO</h3>
+                <p>Vooral uitleg en theorie krijgen.</p>
+              </div>
+              <div class="vak">
+                <h3>Engels, Nederlands & Rekenen</h3>
+                <p>Algemene vakken die voor zich spreken.</p>
+              </div>
+            </div>
+            <a href="https://www.curio.nl">Read More</a>
           </div>
         </div>
-        <div class="col-md-6 ">
-          <div class="img-box">
-            <img src="images/about-img.png" alt="">
-          </div>
-        </div>
-
       </div>
     </div>
   </section>
@@ -287,6 +330,20 @@
   </section>
   <!-- end client section -->
 
+  <!-- footer section -->
+  <footer class="footer_section" style="background-color: #020230; color: white; padding: 20px 0;">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6">
+          <p>&copy; 2024 Curio Software Development, Gert Oldenburg</p>
+        </div>
+        <div class="col-md-6 text-md-right">
+          <a href="https://www.curio.nl" style="color: white; text-decoration: none; margin-right: 15px;">Curio Website</a>
+          <a href="https://go-development.nl" style="color: white; text-decoration: none;">Mijn Website</a>
+        </div>
+      </div>
+    </div>
+  </footer>
 
   <!-- info section -->
 
